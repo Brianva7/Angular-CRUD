@@ -1,0 +1,12 @@
+.employee-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  gap: 10px;
+  margin: 15px;
+  height: 90%;
+}

@@ -1,0 +1,23 @@
+<div class="employee-list">
+  @for(employee of arrEmployee; track employee.id) {
+  <div class="col-12 col-sm-6 col-md-4">
+    <div class="card">
+      <div class="card-body">
+        <h2 class="card-title">
+          Name: {{ employee.name }} {{ employee.lastName }}
+        </h2>
+        <p class="card-text">Email: {{ employee.email }}</p>
+        <p class="card-text">Department: {{ employee.department }}</p>
+        <p class="card-text">Phone: {{ employee.phone }}</p>
+        <button class="btn btn-danger mx-2 w-25" (click)="delete(employee.id)">
+          Delete
+        </button>
+
+        <button class="btn btn-primary mx-2 w-25" (click)="update(employee.id)">
+          Edit
+        </button>
+      </div>
+    </div>
+  </div>
+  }
+</div>

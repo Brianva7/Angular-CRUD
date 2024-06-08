@@ -1,0 +1,65 @@
+<div>
+  <form [formGroup]="newEmployeeForm" (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+      <label htmlFor="inputNombre">Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="inputNombre"
+        formControlName="name"
+      />
+    </div>
+
+    <div class="mb-3">
+      <label htmlFor="inputApellido">Last Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="inputApellido"
+        formControlName="lastName"
+      />
+    </div>
+
+    <div class="mb-3">
+      <label htmlFor="inputEmail">Email</label>
+      <input
+        type="text"
+        class="form-control"
+        id="inputEmail"
+        formControlName="email"
+      />
+    </div>
+
+    <div class="mb-3">
+      <label htmlFor="inputDepartment">Department</label>
+      <input
+        type="text"
+        class="form-control"
+        id="inputDepartment"
+        formControlName="department"
+      />
+    </div>
+
+    <div class="mb-3">
+      <label htmlFor="inputSalary">Salary</label>
+      <input
+        type="text"
+        class="form-control"
+        id="inputSalary"
+        formControlName="salary"
+      />
+    </div>
+
+    <div class="mb-3">
+      <label htmlFor="inputPhone">Phone</label>
+      <input
+        type="text"
+        class="form-control"
+        id=" inputPhone"
+        formControlName="phone"
+      />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
